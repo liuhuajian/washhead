@@ -1,16 +1,10 @@
 package com.medical.health.device
 
-import android.view.View
-import com.clj.fastble.BleManager
-import com.clj.fastble.callback.BleScanCallback
-import com.clj.fastble.data.BleDevice
-import com.clj.fastble.scan.BleScanRuleConfig
 import com.medical.health.device.base.BaseActivity
 import com.medical.health.device.databinding.ActivityMainBinding
 import com.medical.health.device.kt_extension.clickWithTrigger
 import com.medical.health.device.utils.MyLogger
 import com.medical.health.device.vm.BleVm
-import com.tencent.bugly.crashreport.CrashReport
 
 class MainActivity : BaseActivity() {
 
@@ -18,7 +12,6 @@ class MainActivity : BaseActivity() {
 
     override fun initView() {
         super.initView()
-        bind.btnClick.clickWithTrigger(1000) {
             bleVm.sendFunction()
 //            BleManager.getInstance().initScanRule(
 //                BleScanRuleConfig.Builder()
@@ -38,7 +31,6 @@ class MainActivity : BaseActivity() {
 //
 //                }
 //            })
-        }
     }
 
     override fun initListener() {
