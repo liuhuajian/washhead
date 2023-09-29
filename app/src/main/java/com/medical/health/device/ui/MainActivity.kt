@@ -1,8 +1,7 @@
-package com.medical.health.device
+package com.medical.health.device.ui
 
 import com.medical.health.device.base.BaseActivity
 import com.medical.health.device.databinding.ActivityMainBinding
-import com.medical.health.device.kt_extension.clickWithTrigger
 import com.medical.health.device.utils.MyLogger
 import com.medical.health.device.vm.BleVm
 
