@@ -1,5 +1,6 @@
 package com.medical.health.device
 
+import android.app.Application
 import android.support.multidex.MultiDexApplication
 import com.clj.fastble.BleManager
 import com.tencent.bugly.crashreport.CrashReport
@@ -12,8 +13,12 @@ import com.tencent.bugly.crashreport.CrashReport
  * @Version: 0.1
  */
 class MyApplication:MultiDexApplication() {
+    companion object{
+        lateinit var mContext :Application
+    }
     override fun onCreate() {
         super.onCreate()
+        mContext = this
         BleManager.getInstance().init(this)
         CrashReport.initCrashReport(applicationContext);
     }

@@ -85,6 +85,9 @@ dependencies {
     implementation "com.android.support:multidex:1.0.3"
     implementation 'com.tencent.bugly:crashreport:latest.release'
     implementation "com.google.code.gson:gson:2.8.5"
+    implementation 'com.github.LoveLifeEveryday:XPermissions:1.0.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
 //    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
     implementation project(":FastBleLib")
+
 }

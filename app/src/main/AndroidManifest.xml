@@ -16,14 +16,24 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".service.BleManagerService"/>
+        <activity android:name=".ui.BleListActivity"/>
+        <activity android:name=".ui.CheckChairActivity"/>
+        <activity android:name=".ui.PushChairActivity"/>
+        <activity android:name=".ui.CheckSittingPositionActivity"/>
+        <activity android:name=".ui.AdjustWashHeadActivity"/>
+        <activity android:name=".ui.AutoBathActivity"/>
+        <activity android:name=".ui.BathCompleteActivity"/>
+        <activity android:name=".ui.TestHomeActivity"/>
+        <activity android:name=".ui.TestFunctionActivity"/>
         <meta-data android:name="BUGLY_APPID" android:value="76a0c0c50d"/>
 <!--        <meta-data-->
 <!--            android:name="design_width_in_dp"-->

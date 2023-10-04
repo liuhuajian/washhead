@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_f7f7f7">
+
+    <include android:id="@+id/include_titleview"
+        layout="@layout/include_titleview"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bath_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="159dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="368dp"
+        android:layout_height="86dp"
+        android:text="确认"
+        android:gravity="center"
+        android:background="@drawable/bg_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="88dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

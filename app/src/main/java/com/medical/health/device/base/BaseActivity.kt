@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.viewbinding.ViewBinding
 import com.medical.health.device.utils.ActivityManager
 
@@ -16,7 +17,7 @@ import com.medical.health.device.utils.ActivityManager
  * @CreateDate： 2023/9/28 15:17
  * @Version: 0.1
  */
-abstract class BaseActivity:AppCompatActivity(),IBaseView {
+abstract class BaseActivity:FragmentActivity(),IBaseView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

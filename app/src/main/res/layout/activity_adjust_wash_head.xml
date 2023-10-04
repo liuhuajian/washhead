@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/include_titleview"
+        layout="@layout/include_titleview"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="172dp"
+        android:src="@mipmap/ic_head"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_circir_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_circle_green"
+        android:layout_marginTop="432dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_arrow_left"
+        app:layout_constraintTop_toTopOf="@id/iv_circir_green"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circir_green"
+        app:layout_constraintStart_toStartOf="@id/iv_circir_green"
+        android:layout_marginLeft="41dp"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_arrow_top"
+        app:layout_constraintTop_toTopOf="@id/iv_circir_green"
+        app:layout_constraintStart_toStartOf="@id/iv_circir_green"
+        app:layout_constraintEnd_toEndOf="@id/iv_circir_green"
+        android:layout_marginTop="41dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_arrow_right"
+        app:layout_constraintTop_toTopOf="@id/iv_circir_green"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circir_green"
+        app:layout_constraintEnd_toEndOf="@id/iv_circir_green"
+        android:layout_marginRight="41dp"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_arrow_bottom"
+        app:layout_constraintStart_toStartOf="@id/iv_circir_green"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circir_green"
+        app:layout_constraintEnd_toEndOf="@id/iv_circir_green"
+        android:layout_marginBottom="41dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/iv_circir_green"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circir_green"
+        app:layout_constraintStart_toStartOf="@id/iv_circir_green"
+        app:layout_constraintEnd_toEndOf="@id/iv_circir_green"
+        android:src="@mipmap/ic_circle_white_shadow"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/iv_circir_green"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circir_green"
+        app:layout_constraintStart_toStartOf="@id/iv_circir_green"
+        app:layout_constraintEnd_toEndOf="@id/iv_circir_green"
+        android:src="@mipmap/ic_test"
+        />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="368dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_border_636363"
+        android:text="确认"
+        android:textColor="@color/color_969696"
+        android:gravity="center"
+        android:textSize="34sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
