@@ -14,6 +14,6 @@ class AdjustWashHeadActivity:BaseActivity() {
         super.initView()
         bind.includeTitleview.tvBack.click {finish()}
         bind.includeTitleview.tvTitle.text = "调节洗头机"
-        bind.tvConfirm.clickWithTrigger { startActivity(Intent(this, CheckSittingPositionActivity::class.java)) }
+        bind.tvConfirm.clickWithTrigger { startActivity(Intent(this, AdjustArmAndWaterActivity::class.java)) }
     }
 }

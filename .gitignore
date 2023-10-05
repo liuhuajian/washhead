@@ -12,6 +12,7 @@
 .DS_Store
 /build
 /captures
+FastBleLib/build/
 .externalNativeBuild
 .cxx
 local.properties

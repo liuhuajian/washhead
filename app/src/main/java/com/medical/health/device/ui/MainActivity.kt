@@ -2,6 +2,7 @@ package com.medical.health.device.ui
 
 import android.Manifest
 import android.content.Intent
+import android.util.DisplayMetrics
 import com.clj.fastble.BleManager
 import com.medical.health.device.R
 import com.medical.health.device.base.BaseActivity
@@ -23,6 +24,7 @@ class MainActivity : BaseActivity() {
 
     override fun initView() {
         super.initView()
+        bleVm.sendFunction()
         XPermission.request(this, *permisss){
             allGranted,deniedList ->
             run {
@@ -65,6 +67,22 @@ class MainActivity : BaseActivity() {
         bind.tvBleStatus.clickWithTrigger { startActivity(Intent(this, BleListActivity::class.java)) }
         bind.tvStart.clickWithTrigger { startActivity(Intent(this, CheckChairActivity::class.java)) }
         bind.tvTestEntry.clickWithTrigger{ startActivity(Intent(this, TestHomeActivity::class.java)) }
+        bleVm.sendSuccess.observe(this){
+            window.decorView.run {
+                MyLogger.e("height:$height-->width-->$width")
+            }
+//            val displayMetrics = DisplayMetrics()
+//            display.getMetrics(displayMetrics)
+//            MyLogger.e("densityDpi: ${displayMetrics.densityDpi}")
+//            MyLogger.e("density: ${displayMetrics.density}")
+//            val displayMetrics = applicationContext.resources.displayMetrics
+//            MyLogger.e("densityDpi: " + displayMetrics.densityDpi)
+//            MyLogger.e("density: " + displayMetrics.density)
+//            MyLogger.e("widthPixels: " + displayMetrics.widthPixels)
+//            MyLogger.e("heightPixels: " + displayMetrics.heightPixels)
+        }
     }
+
+    val bleVm = BleVm()
 
 }

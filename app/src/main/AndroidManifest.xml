@@ -30,6 +30,7 @@
         <activity android:name=".ui.PushChairActivity"/>
         <activity android:name=".ui.CheckSittingPositionActivity"/>
         <activity android:name=".ui.AdjustWashHeadActivity"/>
+        <activity android:name=".ui.AdjustArmAndWaterActivity"/>
         <activity android:name=".ui.AutoBathActivity"/>
         <activity android:name=".ui.BathCompleteActivity"/>
         <activity android:name=".ui.TestHomeActivity"/>

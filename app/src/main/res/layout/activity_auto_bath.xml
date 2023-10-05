@@ -8,16 +8,69 @@
     <include android:id="@+id/include_titleview"
         layout="@layout/include_titleview"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bath_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <include
+        android:id="@+id/include_hair_clean"
+        layout="@layout/item_auto_bath"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="159dp"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
+    />
+
+    <include
+        android:id="@+id/include_backup_clean"
+        layout="@layout/item_auto_bath"
+        app:layout_constraintTop_toBottomOf="@+id/include_hair_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        />
+
+    <include
+        android:id="@+id/include_arm_clean"
+        layout="@layout/item_auto_bath"
+        app:layout_constraintTop_toBottomOf="@+id/include_backup_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        />
+
+    <include
+        android:id="@+id/include_hand_clean"
+        layout="@layout/item_auto_bath"
+        app:layout_constraintTop_toBottomOf="@+id/include_arm_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_hand_clean"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="24dp"
+        style="@style/CustomSeekbarStyle"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
