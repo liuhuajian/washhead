@@ -24,17 +24,17 @@ class AutoBathActivity:BaseActivity() {
     }
 
     private fun initItemView() {
-        bind.includeBackupClean.titleview.run {
-            setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_backside,0,0,0)
-            text = "背部清洁"
+        bind.includeBackupClean.run {
+            ivTitle.setImageResource(R.mipmap.ic_backside)
+            tvTitle.text = "背部清洁"
         }
-        bind.includeArmClean.titleview.run {
-            setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_arm_strong,0,0,0)
-            text = "手臂清洁"
+        bind.includeArmClean.run {
+            ivTitle.setImageResource(R.mipmap.ic_arm_strong)
+            tvTitle.text = "手臂清洁"
         }
-        bind.includeHandClean.titleview.run {
-            setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_hand_hold,0,0,0)
-            text = "手持清洁"
+        bind.includeHandClean.run {
+            ivTitle.setImageResource(R.mipmap.ic_hand_hold)
+            tvTitle.text = "手持清洁"
         }
     }
 

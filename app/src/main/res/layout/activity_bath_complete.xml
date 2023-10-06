@@ -10,7 +10,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@mipmap/ic_health_ams"
-        android:layout_marginTop="183dp"
+        android:layout_marginTop="183px"
         />
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_health_tips"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@mipmap/ic_health_tips"
-        android:layout_marginTop="262dp"
+        android:layout_marginTop="262px"
         />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="347dp"
+        android:layout_marginTop="347px"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="洗浴已完成"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="28px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
@@ -47,18 +47,18 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_confirm"
-        android:layout_width="368dp"
-        android:layout_height="86dp"
+        android:layout_width="368px"
+        android:layout_height="86px"
         android:text="返回首页"
         android:gravity="center"
         android:background="@drawable/bg_confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="34sp"
+        android:textSize="34px"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginBottom="142dp"
+        android:layout_marginBottom="142px"
         android:alpha="0.8"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

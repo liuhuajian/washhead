@@ -12,7 +12,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@mipmap/ic_health_tips"
-        android:layout_marginTop="118dp"
+        android:layout_marginTop="118px"
 
         />
 
@@ -23,41 +23,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@mipmap/ic_icon_test"
-        android:layout_marginTop="227dp"
+        android:layout_marginTop="227px"
         />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_psw"
-            android:layout_width="420dp"
-            android:layout_height="50dp"
+            android:layout_width="420px"
+            android:layout_height="50px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/tv_confirm"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="50px"
             android:background="@drawable/bg_solid_33white"
             android:hint="请输入密码:"
             android:textColorHint="#99ffffff"
-            android:textSize="18sp"
+            android:textSize="18px"
             android:drawableLeft="@mipmap/ic_block"
-            android:drawablePadding="15dp"
-            android:paddingLeft="11dp"
+            android:drawablePadding="15px"
+            android:paddingLeft="11px"
             android:textColor="@color/white"
             />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_confirm"
-        android:layout_width="368dp"
-        android:layout_height="86dp"
+        android:layout_width="368px"
+        android:layout_height="86px"
         android:text="登陆"
         android:gravity="center"
         android:background="@drawable/bg_confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="34sp"
+        android:textSize="34px"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="128px"
         android:alpha="0.8"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

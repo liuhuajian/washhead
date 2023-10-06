@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="146dp"
+    android:layout_height="146px"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_titleview"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -13,12 +13,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="返回"
-        android:textSize="24sp"
+        android:textSize="24px"
         android:textColor="@color/white"
         android:drawableLeft="@mipmap/ic_arrow_white"
-        android:drawablePadding="10dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginLeft="26dp"
+        android:drawablePadding="10px"
+        android:layout_marginTop="47px"
+        android:layout_marginLeft="26px"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -28,9 +28,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="75px"
         tools:text="检测坐姿高度"
-        android:textSize="32sp"
+        android:textSize="32px"
         android:textColor="@color/white"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
